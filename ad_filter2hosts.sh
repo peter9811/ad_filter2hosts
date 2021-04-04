@@ -1,5 +1,5 @@
  #!/bin/bash
- for source in `cat adblock_lists.lst`; do
+ for source in `cat filter_list.lst`; do
      echo $source;
      curl --silent $source >> ads.txt
      echo -e "\t`wc -l ads.txt | cut -d " " -f 1` lines downloaded"
@@ -11,7 +11,7 @@
  echo -e "\t`wc -l ads_parsed.txt | cut -d " " -f 1` lines after parsing"
  
  echo -e "\nRemoving duplicates..."
- sort -u ads_parsed.txt > adsblock_list.txt
+ sort -u ads_parsed.txt > adblock.txt
  rm ads_parsed.txt
  echo -e "\t`wc -l ads_unique.txt | cut -d " " -f 1` lines after deduping"
  
