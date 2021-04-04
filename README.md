@@ -5,8 +5,8 @@ I edited a script that I found on https://www.reddit.com/r/pihole/comments/4p2tp
 
 
 I use this filters list:
-▬Cybo1927 host list to blocks anti-adblock pop-ups:
+-Cybo1927 host list to blocks anti-adblock pop-ups:
 	https://raw.githubusercontent.com/Cybo1927/Hosts/master/Hosts
-▬Energized Spark
+-Energized Spark
 	https://block.energized.pro/spark/formats/hosts.txt
-▬and the offials used by AdAway
+-and the offials used by AdAway
