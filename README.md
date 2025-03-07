@@ -1,13 +1,37 @@
 # ad_filter2hosts
-Convert domains filters (DNS, abp, ublock) to hosts list with 0.0.0.0 IP
 
-I edited a script that I found on https://www.reddit.com/r/pihole/comments/4p2tp7/adding_easylist_and_other_adblocklike_sources_to/, to convert DNS to a hosts filter list, to be added on AdAway (https://github.com/AdAway/AdAway)
+Convert various filter formats (DNS, ABP, uBlock Origin, AdBlock) to hosts list with 0.0.0.0 IP
 
+## Overview
 
-I use this filters list:
+This tool converts domain filter lists from various formats to a unified hosts file format with 0.0.0.0 IP addresses. It supports:
 
-▬Cybo1927 host list to blocks anti-adblock pop-ups: <https://raw.githubusercontent.com/Cybo1927/Hosts/master/Hosts>
+- Standard hosts files
+- AdBlock/uBlock style domain filters (`||domain.com^`)
+- Simple domain lists
+- Comment and non-domain lines are automatically filtered out
 
-▬Energized Spark: https://block.energized.pro/spark/formats/hosts.txt
+## Usage
 
-and the offials used by AdAway
+1. Add your filter sources to `filter_list.lst`
+2. Run `./ad_filter2hosts.sh`
+3. The resulting hosts file will be saved as `hosts_filtered.txt`
+
+## Automated Updates
+
+A GitHub Actions workflow automatically updates the hosts file daily. The latest version is always available in this repository as `hosts_filtered.txt`.
+
+- The workflow runs daily at midnight UTC
+- It can also be triggered manually from the Actions tab
+- Statistics about the hosts file are available in `hosts_info.md`
+
+## Default Filter Sources
+
+The tool comes pre-configured with these filter sources:
+
+- Cybo1927 host list (blocks anti-adblock pop-ups)
+- Energized Spark
+- Common AdBlock filter lists
+- Default AdAway sources
+
+You can customize the sources by editing the `filter_list.lst` file.

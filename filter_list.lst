@@ -1,1 +1,23 @@
-https://raw.githubusercontent.com/Cybo1927/Hosts/master/Hosts
+// Energized Protection
+https://energized.pro/spark/hosts.txt
+https://energized.pro/blu/formats/hosts.txt
+
+// EasyList
+https://easylist.to/easylist/easylist.txt
+https://easylist.to/easylist/easyprivacy.txt
+https://easylist.to/easylist/fanboy-annoyance.txt
+
+// Peter Lowe's Ad and tracking server list
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+
+// Steven Black's hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+// AdGuard
+https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt
+
+// Disconnect.me
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
