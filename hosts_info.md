@@ -1,3 +1,3 @@
 # Host File Information
-- Last updated: 2025-12-04
-- Total domains blocked: 208138
+- Last updated: 2025-12-05
+- Total domains blocked: 209922
